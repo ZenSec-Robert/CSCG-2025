@@ -1,4 +1,3 @@
-```markdown
 # Writeup: Analysis and Exploitation of the Token-Based Login Service
 
 ## Overview
@@ -77,7 +76,6 @@ The challenge combined elements of network forensics and web security, requiring
 - I analyzed the pcapng file in Wireshark to locate a critical HTTP response.
 - I extracted a valid token from the `Set-Cookie` header in the HTTP response.
 - I used this token to authenticate on the web service, ultimately retrieving the flag:  
-  `CSCG{sn00py_sn00p_w1th_w1resh4rk!}`
+  `CSCG{***********REDACTED********}`
 
 This exercise highlights the importance of securing token transmission and enforcing robust server-side authentication mechanisms. It also demonstrates how network forensics can reveal sensitive information when proper security measures are not in place.
-```
