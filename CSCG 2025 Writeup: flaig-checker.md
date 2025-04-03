@@ -50,7 +50,7 @@ I then wrote scripts using `llama_cpp` to probe the model with known flag prefix
 prompt = "CSCG{******Redacted**********"
 ```
 
-With `max_tokens` set to 30 and temperature low (`0.1`), the model consistently returned the same tail segment. This allowed us to reconstruct the full flag string.
+With `max_tokens` set to 30 and temperature low (`0.1`), the model consistently returned the same tail segment. This allowed me to reconstruct the full flag string.
 
 The key realization was that the model's fine-tuning caused it to memorize the exact training sequence. Since LLMs encode token sequences probabilistically, repeating the completion multiple times helped stabilize and verify the output.
 
